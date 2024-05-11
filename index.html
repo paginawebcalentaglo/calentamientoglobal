@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El calentamiento global</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu {
+      background-color: #333;
+      overflow: hidden;
+    }
+    
+    .menu a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .menu a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .menu .icon {
+      display: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .menu a:not(:first-child) {display: none;}
+      .menu a.icon {
+        float: right;
+        display: block;
+        padding: 14px 16px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 17px;
+      }
+      .submenu a {
+        float: none;
+        display: block;
+        text-align: center;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .menu.responsive {position: relative;}
+      .menu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    
+    h1 {
+      color: greenyellow; /* Cambia el color del texto a verde amarillento */
+      text-align: center;
+    }
+    
+    h3 {
+      color: blue; /* Cambia el color del texto a azul */
+    }
+    
+    .contenido {
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    
+    .contenido p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    
+    .contenido img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    table th, table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    table th {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    
+    .submenu {
+      display: none;
+      text-align: center;
+    }
+    
+    .submenu a {
+      display: block;
+      text-align: center;
+    }
+    
+    .menu.responsive .submenu {
+      display: block;
+    }
+    
+    .menu.responsive .submenu a {
+      padding-left: 20px;
+    }
+
+    .menu .icon {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 14px 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 17px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu" id="myMenu">
+    <a href="index.html">Inicio</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <img src="menu.png" alt="menu" width="30">
+    </a>
+    <div class="submenu">
+      <a href="https://youtu.be/umAGi80FsPM">Causas y consecuencias</a>
+      <a href="descongelamiento.html">Descongelamiento</a>
+      <a href="https://youtu.be/mWzxIqN8lgI?si=KlCcwHDG8_4BdvMO">El acelerado deshielo</a>
+    </div>
+  </div>
+  <h1>El Calentamiento Global</h1>
+  <div class="contenido">
+    <p>El calentamiento global resulta del aumento del efecto invernadero, un proceso en el que la radiación térmica emitida por la Tierra queda atrapada en la atmósfera debido a los gases con ese efecto. Su presencia es natural y necesaria para mantener la temperatura del planeta en unos valores habitables. El problema es que las emisiones de gases como el metano o el óxido nitroso se han disparado en comparación con la era preindustrial.</p> 
+    <img src="calentamiento_global_rdn.jpg" alt="calentamiento global">
+  </div>
+  <div class="contenido">
+    <p>Llevamos años con una repetición constante de titulares sobre nuevos récords de calor en España y el mundo. Según los registros cada verano es más cálido que el anterior. Pero en 2023, las temperaturas batieron todos los récords. Según los datos del Servicio de Cambio Climático de Copernicus de la Unión Europea fue el año más caluroso desde que se empezaron los registros en 1850. La temperatura subió 1,48ºC de media con respecto a antes del inicio de la Revolución Industrial. Este aumento de temperatura se acerca peligrosamente al límite que según los científicos no deberíamos superar.</p>
+    <img src="calentamiento-global.jpg" alt="calentamiento global">
+  </div>
+  <div class="contenido">
+    <p>De hecho, en 2021, por primera vez desde que se tienen registros, las conclusiones de un estudio pusieron en jaque las estimaciones de evolución climática al revelar que la capacidad de la selva más grande del mundo de absorber carbono de la atmósfera se ha reducido hasta tal punto que ya podría estar liberando más carbono del que almacena. Pero, ¿qué es exactamente el calentamiento global y cómo impacta en nuestro planeta y nuestro día a día? Hacemos un recorrido por la ciencia para explicar todas las aristas de este fenómeno que ya impregna a todos los niveles nuestro día a día. Para describir los complejos cambios que afectan actualmente a los sistemas meteorológicos y climáticos de nuestro planeta.</p>
+    <img src="global.png" alt="global">
+  </div>
+  <div class="contenido">
+    <table>
+      <thead>
+        <tr>
+          <th>Grados</th>
+          <th>País</th>
+          <th>Hectáreas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>40°</td>
+          <td>Colombia</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td>África</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>60°</td>
+          <td>Asia</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>80°</td>
+          <td>Australia</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>70°</td>
+          <td>Estados Unidos</td>
+          <td>13</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myMenu");
+      if (x.className === "menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "menu";
+      }
+    }
+  </script>
+</body>
+</html>
